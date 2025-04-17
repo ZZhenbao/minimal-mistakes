@@ -1,6 +1,6 @@
 ---
 title: "hello"
-data: 2025-4-18
-layout: posts
+date: 2025-4-18
+layout: single
 ---
 hello?
