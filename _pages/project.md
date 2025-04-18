@@ -1,7 +1,7 @@
 ---
 title: "PROJECTS"
 permalink: /categories/project/
-layout: archive
+layout: single
 taxonomy: project
 ---
 nothing

@@ -1,6 +1,6 @@
 ---
 title: "BLOGS"
 permalink: /categories/blog/
-layout: archive
+layout: single
 taxonomy: blog
 ---
