@@ -49,6 +49,7 @@ categories: blog
 - **公式:** `Total_Physical_Parameters * Bytes_per_Parameter_FP4`
 - **计算:** ~671B parameters * 0.5 byte/parameter = **335.5 GB**
 - **说明:** 分布在所有参与 Tensor Parallelism 的 GPU 上。如果 tp_size = N，则每张 GPU 大约加载 335.5 / N GB 的权重。
+
 ### **2. KV Cache:**
 - KV Cache 随 Batch Size 和 Sequence Length 线性增长。
 - **公式:** `num_hidden_layers * B * S * 2 * hidden_size * Bytes_per_Element_KV`
@@ -89,7 +90,8 @@ categories: blog
 # QLoRA微调显存消耗分析
 ## QLoRA 微调核心假设
 
-| 参数                                 | 值                                         | 说明                                         |
+
+| 参数 | 值| 说明  |
 | ---------------------------------- | ----------------------------------------- | ------------------------------------------ |
 | **Batch Size (B)**                 | 32                                        |                                            |
 | **序列长度 (S)**                       | 4096 / 16384                              |                                            |
@@ -105,6 +107,7 @@ categories: blog
 | **梯度检查点 (Gradient Checkpointing)** | 启用 (Enabled)                              |                                            |
 | **KV Cache: key + value**          | ×2                                        |                                            |
 | **基础模型精度 (加载)**                    | 4-bit (0.5 bytes/param)                   | 使用 QLoRA 加载的基础模型参数精度                       |
+
 ## 消耗分析 (QLoRA 微调)
 ### 1. 基础模型权重 (Frozen, 4-bit Quantized Parameters)
 - 使用 QLoRA 加载量化后的基础模型。
@@ -151,6 +154,7 @@ categories: blog
 | **B: S=4096, r=64**  | 4096     | 64        | ~335.5           | ~0.90 GB           | ~214.7    | ~105 (mid-est.) | ~15     | **~671 GB**  | **~84 GB/GPU**  |
 | **C: S=16384, r=8**  | 16384    | 8         | ~335.5           | ~0.11 GB           | ~858.9    | ~210 (mid-est.) | ~15     | **~1420 GB** | **~178 GB/GPU** |
 | **D: S=16384, r=64** | 16384    | 64        | ~335.5           | ~0.90 GB           | ~858.9    | ~210 (mid-est.) | ~15     | **~1421 GB** | **~178 GB/GPU** |
+
 
 # 部署方案
 部署DeepSeek-R1（671B），权重使用FP4量化，激活值和KV缓存使用BF16。
