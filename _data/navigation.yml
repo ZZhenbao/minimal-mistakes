@@ -10,11 +10,13 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title: "HOME"
+    url: /
   - title: "BLOG"
-    url: /blog/
+    url: /categories/blog/
   - title: "ARTICLES"
-    url: /article/
+    url: /categories/article/
   - title: "PROJECTS"
-    url: /project/
+    url: /categories/project/
   - title: "LIFE"
-    url: /life/
+    url: /categories/life/

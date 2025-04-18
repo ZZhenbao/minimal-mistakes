@@ -1,5 +1,5 @@
 ---
 title: "LIFE"
-permalink: /life/
+permalink: /categories/life/
 layout: single
 ---

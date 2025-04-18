@@ -1,5 +1,5 @@
 ---
 title: "BLOGS"
-permalink: /blog/
+permalink: /categories/blog/
 layout: single
 ---

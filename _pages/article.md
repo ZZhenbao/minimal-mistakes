@@ -1,5 +1,5 @@
 ---
 title: "ARTICLES"
-permalink: /article/
+permalink: /categories/article/
 layout: single
 ---
