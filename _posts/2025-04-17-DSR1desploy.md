@@ -1,5 +1,5 @@
 ---
-title: "欢迎"
+title: "DeepSeek-R1(671B)部署方案"
 date: 2025-04-18
 categories: blog
 ---
