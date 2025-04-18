@@ -6,7 +6,7 @@ categories:
 tags: 
   - 原理 
   - 大模型
-layout: post
+layout: archive
 ---
 
 # 模型信息
