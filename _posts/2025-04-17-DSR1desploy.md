@@ -3,7 +3,6 @@ title: "DeepSeek-R1(671B)部署方案"
 date: 2025-04-18
 categories: blog
 ---
-# DeepSeek-R1(671B)部署方案
 
 # 模型信息
 [nvidia/DeepSeek-R1-FP4 · Hugging Face](https://huggingface.co/nvidia/DeepSeek-R1-FP4)
