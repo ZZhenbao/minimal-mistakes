@@ -1,5 +1,6 @@
 ---
 title: "ARTICLES"
 permalink: /categories/article/
-layout: single
+layout: archive
+taxonomy: article
 ---

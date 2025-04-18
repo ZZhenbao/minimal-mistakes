@@ -1,5 +1,6 @@
 ---
 title: "LIFE"
 permalink: /categories/life/
-layout: single
+layout: archive
+taxonomy: life
 ---

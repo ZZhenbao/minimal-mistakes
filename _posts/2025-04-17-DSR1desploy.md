@@ -74,7 +74,7 @@ layout: post
 | 4096  | ~60 - 80 GB    |
 | 16384 | ~120 - 160 GB  |
 
-$Activation Memory=B×S×H×L×Bytes per Element$
+$ Activation Memory=B×S×H×L×Bytes per Element $
 
 - 难精确估算的部分，受具体实现、计算精度 (BF16) 和优化策略 (Activation Recomputation) 影响极大。
 
