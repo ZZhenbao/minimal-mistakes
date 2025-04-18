@@ -14,6 +14,8 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+
+
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
@@ -324,3 +326,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Minimal Mistakes 会自动读取 header_pages 中的 Markdown 文件
+header_pages:
+  - article.md
+  - blog.md
+  - life.md
+  - project.md
